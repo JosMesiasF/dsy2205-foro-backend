@@ -1,0 +1,26 @@
+
+# Archivos generados por Maven
+**/target/
+
+# Configuracion de IDE
+.idea/
+.vscode/
+**/.settings/
+**/.classpath
+**/.project
+
+# Archivos temporales y logs
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Variables de entorno y credenciales locales
+.env
+.env.*
+**/application-local.properties
+**/application-secret.properties
+
+# Archivos de respaldo
+*.bak
+*.old
