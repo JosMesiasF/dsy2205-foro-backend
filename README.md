@@ -80,6 +80,26 @@ categorías iniciales.
 El script debe ejecutarse una vez sobre un esquema
 FORO_APP previamente creado y con los permisos necesarios.
 
+
+### Instalación de la base de datos
+
+Para preparar la base Oracle desde cero:
+
+1. Crear el usuario/esquema FORO_APP con los permisos necesarios.
+2. Conectarse a Oracle utilizando FORO_APP.
+3. Ejecutar database/DSY2205_01_estructura_bd.sql
+   para crear las cuatro tablas y las cinco categorías.
+4. Ejecutar database/DSY2205_02_datos_prueba.sql
+   para insertar tres usuarios, tres temas y tres comentarios.
+5. Configurar la variable de entorno FORO_DB_PASSWORD
+   antes de iniciar cada microservicio.
+
+IMPORTANTE:
+Los scripts 01 y 02 están destinados a una instalación nueva.
+No se debe volver a ejecutar el script 01 sobre una base
+que ya contiene las tablas.
+
+
 ## 5. Configuración
 
 Requisitos:
